@@ -1,35 +1,35 @@
-# 🅿️ Parkirin - Sistem Pembayaran Parkir Cashless Kota Batam
+# 🅿️ Parkirin - Batam City Cashless Parking Payment System[cite: 8]
 
-**Parkirin** adalah aplikasi mobile pintar (*on-street parking*) yang dirancang khusus untuk memodernisasi sistem perparkiran di Kota Batam. Aplikasi ini mendigitalisasi proses pencatatan kendaraan dan memfasilitasi transaksi pembayaran secara *cashless*, menciptakan pengalaman parkir yang lebih transparan, cepat, dan efisien bagi pengemudi maupun juru parkir.
-
----
-
-## 🛠️ Teknologi & Arsitektur (Tech Stack)
-
-Aplikasi ini dibangun dengan fokus pada performa yang tinggi dan kode yang mudah dipelihara menggunakan **Flutter Clean Architecture** (dibagi ke dalam *Entities, Use Cases, Repository/Presenter, dan Data Source/UI*).
-
-*   **Bahasa Pemrograman:** Dart[cite: 10]
-*   **Kerangka Kerja (Framework):** Flutter[cite: 10]
-*   **Basis Data (BaaS):** Firebase (Authentication & Firestore)[cite: 10]
-*   **Payment Gateway:** Midtrans (Terintegrasi untuk metode pembayaran *cashless*)[cite: 10]
-*   **Desain UI/UX:** Figma[cite: 10]
+**Parkirin** is a smart mobile application (*on-street parking*) specifically designed to modernize the parking system in Batam City[cite: 8]. This application digitalizes the vehicle recording process and facilitates *cashless* payment transactions, creating a more transparent, fast, and efficient parking experience for both drivers and parking attendants[cite: 8].
 
 ---
 
-## ✨ Fitur Utama
+## 🛠️ Technologies & Architecture (Tech Stack)[cite: 8]
 
-Sistem ini memisahkan alur kerja menjadi dua peran (*role*) utama[cite: 10]:
+This application is built with a focus on high performance and maintainable code using **Flutter Clean Architecture** (divided into *Entities, Use Cases, Repository/Presenter, and Data Source/UI*)[cite: 8].
 
-### 🚗 Sisi Pengemudi (Driver)
-*   **Autentikasi Mudah:** Mendaftar dan masuk menggunakan Nomor HP (verifikasi OTP) atau integrasi langsung dengan Akun Google[cite: 10].
-*   **Manajemen Kendaraan (CRUD):** Mendaftarkan, memperbarui, atau menghapus plat nomor dan jenis kendaraan di dalam profil[cite: 10].
-*   **Pembayaran Fleksibel:** Membayar tagihan parkir secara *cashless* melalui berbagai metode pembayaran (*Payment Gateway*), atau menggunakan sistem penukaran Poin (Redeem 2000 Poin untuk 1x parkir gratis)[cite: 10].
-*   **Riwayat Parkir:** Memantau seluruh jejak aktivitas parkir dan status pembayaran yang pernah dilakukan[cite: 10].
+*   **Programming Language:** Dart[cite: 8]
+*   **Framework:** Flutter[cite: 8]
+*   **Database (BaaS):** Firebase (Authentication & Firestore)[cite: 8]
+*   **Payment Gateway:** Midtrans (Integrated for *cashless* payment methods)[cite: 8]
+*   **UI/UX Design:** Figma[cite: 8]
 
-### 👷 Sisi Juru Parkir (Parking Attendant)
-*   **Login Aman:** Menggunakan Nomor Induk Juru Parkir (NIJP) dan kata sandi khusus yang terdaftar di sistem[cite: 10].
-*   **Pembuatan Tiket Cepat:** Mencetak tiket parkir baru dengan menginput jenis kendaraan, plat nomor, dan metode pembayaran (*Tagih Driver* untuk pengguna aplikasi, atau *Catat Parkir* untuk pengguna non-aplikasi)[cite: 10].
-*   **Fleksibilitas Edit:** Fitur pembaruan atau koreksi detail tiket parkir (berlaku sebelum batas waktu 10 menit sejak tiket dibuat)[cite: 10].
-*   **Statistik Harian:** Dasbor khusus yang menampilkan jumlah total tiket, tiket pending, tiket terbayar, dan estimasi pendapatan secara *real-time*[cite: 10].
+---
+
+## ✨ Key Features[cite: 8]
+
+This system separates the workflow into two main roles[cite: 8]:
+
+### 🚗 Driver Side[cite: 8]
+*   **Easy Authentication:** Register and log in using a Phone Number (OTP verification) or direct integration with a Google Account[cite: 8].
+*   **Vehicle Management (CRUD):** Register, update, or delete license plates and vehicle types within the profile[cite: 8].
+*   **Flexible Payment:** Pay parking bills *cashless* through various payment methods (*Payment Gateway*), or use the Point redemption system (Redeem 2000 Points for 1x free parking)[cite: 8].
+*   **Parking History:** Monitor the complete trail of parking activities and previously made payment statuses[cite: 8].
+
+### 👷 Parking Attendant Side[cite: 8]
+*   **Secure Login:** Uses the Parking Attendant Identification Number (NIJP) and a specific password registered in the system[cite: 8].
+*   **Fast Ticket Creation:** Issue new parking tickets by inputting the vehicle type, license plate, and payment method (*Bill Driver* for app users, or *Record Parking* for non-app users)[cite: 8].
+*   **Editing Flexibility:** Feature to update or correct parking ticket details (valid before the 10-minute time limit since the ticket was created)[cite: 8].
+*   **Daily Statistics:** A dedicated dashboard displaying the total number of tickets, pending tickets, paid tickets, and estimated revenue in *real-time*[cite: 8].
 
 ---
